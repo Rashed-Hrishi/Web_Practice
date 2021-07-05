@@ -13,12 +13,13 @@
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(100px,1fr));
             grid-gap: 5px;
+            grid-auto-flow: dense;
         }
         .container img{
             width: 100%;
             height: 100%;
+            object-fit: cover;
         }
-    }
         .horizontal {
             grid-column: auto/span 2;
         }
@@ -29,6 +30,7 @@
             grid-column: auto/span 2;
             grid-row: auto/span 2;
         }
+        /* note: grid-column: auto/span 2; & grid-column: span 2; is same. */
 
         </style>
     </head>
